@@ -1,0 +1,6 @@
+service:
+  type: LoadBalancer
+  port: 3000
+
+env:
+  MILVUS_URL: milvus-milvus.default.svc.cluster.local:19530

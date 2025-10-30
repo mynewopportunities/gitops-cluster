@@ -1,0 +1,7 @@
+apiVersion: v2
+name: attu
+version: 0.1.0
+dependencies:
+  - name: attu
+    version: 2.6.0
+    repository: https://zilliztech.github.io/attu-helm/
