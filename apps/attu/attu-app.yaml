@@ -6,11 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/mynewopportunities/gitops-cluster.git
+    repoURL: https://github.com/zilliztech/attu-helm.git
     targetRevision: main
-    path: apps/attu/chart
-    helm:
-      releaseName: attu
+    path: charts/attu
   destination:
     server: https://kubernetes.default.svc
     namespace: milvus
