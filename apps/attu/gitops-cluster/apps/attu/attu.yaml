@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: attu
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/mynewopportunities/gitops-cluster.git
+    targetRevision: main
+    path: apps/attu-chart
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: milvus
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
