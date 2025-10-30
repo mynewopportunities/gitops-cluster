@@ -1,0 +1,13 @@
+cluster:
+  enabled: true
+standalone:
+  enabled: false
+image:
+  tag: v2.4.3
+resources:
+  requests:
+    cpu: 500m
+    memory: 1Gi
+  limits:
+    cpu: 2
+    memory: 4Gi

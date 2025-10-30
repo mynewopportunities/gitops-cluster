@@ -1,0 +1,7 @@
+apiVersion: v2
+name: milvus
+version: 0.1.0
+dependencies:
+  - name: milvus
+    version: 4.2.12
+    repository: https://zilliztech.github.io/milvus-helm/
