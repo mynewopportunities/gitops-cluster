@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: zilliz/attu
+  tag: v2.6
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3000
+
+env:
+  MILVUS_URL: "milvus-standalone.milvus.svc.cluster.local:19530"
